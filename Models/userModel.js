@@ -10,7 +10,11 @@ const UserSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    fullName: {
+    firstname: {
+      type: String,
+      required: true,
+    },
+    lastname: {
       type: String,
       required: true,
     },
@@ -25,7 +29,8 @@ const UserSchema = mongoose.Schema(
     phoneNum: Number,
     address: String,
     email: String,
-    
+    typeDisease: {type: Array},
+    medicalExamination: {type: Array}
     // active: { type: Boolean, default: false },
   },
   { timestamps: true },

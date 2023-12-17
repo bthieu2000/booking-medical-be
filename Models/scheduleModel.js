@@ -1,8 +1,8 @@
 import mongoose from 'mongoose'
 
-const PostSchema = mongoose.Schema(
+const ScheduleMSchema = mongoose.Schema(
   {
-    userId: {
+    doctorId: {
       type: String,
       required: true,
     },
@@ -26,5 +26,5 @@ const PostSchema = mongoose.Schema(
   },
 )
 
-const postModel = mongoose.model('posts', PostSchema)
-export default postModel
+const scheduleModel = mongoose.model('posts', ScheduleMSchema)
+export default scheduleModel
